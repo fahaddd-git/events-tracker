@@ -15,6 +15,7 @@ The Events Tracker is a web application that allows users to:
 * Java
 * Hibernate
 * Spring Boot
+* Spring Security
 * MySQL
 * Thymeleaf templates
 * Bootstrap
