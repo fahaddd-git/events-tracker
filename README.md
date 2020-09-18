@@ -9,6 +9,7 @@ The Events Tracker is a web application that allows users to:
 * Create, Edit, and Delete Events
 * Create Categories
 * Add Categories to Events and filter events by Category
+* Add zoom links to events
 * Create user accounts
 
 ## Technologies
