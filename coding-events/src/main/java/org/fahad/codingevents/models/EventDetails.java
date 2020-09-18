@@ -16,9 +16,12 @@ public class EventDetails extends AbstractEntity {
     @Email(message = "Invalid email. Try again.")
     private String contactEmail;
 
-    public EventDetails(@Size(max = 500, message = "Description too long!") String description, @NotBlank(message = "Email is required") @Email(message = "Invalid email. Try again.") String contactEmail) {
+    private String zoomLink;
+
+    public EventDetails(@Size(max = 500, message = "Description too long!") String description, @NotBlank(message = "Email is required") @Email(message = "Invalid email. Try again.") String contactEmail, String zoomLink) {
         this.description = description;
         this.contactEmail = contactEmail;
+        this.zoomLink=zoomLink;
     }
 
     public EventDetails() {}
@@ -33,6 +36,14 @@ public class EventDetails extends AbstractEntity {
 
     public String getContactEmail() {
         return contactEmail;
+    }
+
+    public String getZoomLink() {
+        return zoomLink;
+    }
+
+    public void setZoomLink(String zoomLink) {
+        this.zoomLink = zoomLink;
     }
 
     public void setContactEmail(String contactEmail) {
